@@ -44,8 +44,9 @@
     }
     .mission-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr auto 1fr auto 1fr;
       gap: 2rem;
+      align-items: center;
     }
     .mission-item {
       text-align: center;
@@ -61,7 +62,9 @@
     }
     .mission-divider {
       width: 1px;
+      height: 60px;
       background: rgba(255,255,255,0.2);
+      justify-self: center;
     }
 
     /* Values */

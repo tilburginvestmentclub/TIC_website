@@ -1,0 +1,336 @@
+[
+  {
+    "id": "ml-portfolio-optimization",
+    "title": "Machine Learning in Portfolio Optimization: A Practical Guide",
+    "slug": "ml-portfolio-optimization",
+    "category": "Quantitative",
+    "categoryColor": "#2563eb",
+    "author": "Emma Bakker",
+    "authorRole": "Quantitative Research Team",
+    "date": "2025-02-18",
+    "readTime": "8 min read",
+    "excerpt": "How our quant team is leveraging reinforcement learning and modern portfolio theory to build smarter, more adaptive investment strategies that outperform traditional mean-variance optimization.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69a5f2140d94759156ad0491_5144675a-2715-4324-8a52-b66e8c38b852.avif",
+    "tags": ["Machine Learning", "Portfolio Theory", "Python", "Risk"],
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Modern portfolio theory has long been the cornerstone of institutional asset management. But as markets grow more complex and data more abundant, the limitations of classical mean-variance optimization are becoming increasingly apparent. At TIC's Quantitative Research Team, we've been exploring how machine learning can address these shortcomings."
+      },
+      {
+        "type": "heading",
+        "text": "The Problem with Mean-Variance Optimization"
+      },
+      {
+        "type": "paragraph",
+        "text": "Markowitz's original framework, while elegant, suffers from a critical flaw: it is highly sensitive to input estimates. Small errors in expected returns — which are notoriously difficult to forecast — can lead to wildly different and often extreme portfolio weights. In practice, this means unconstrained MVO portfolios tend to be heavily concentrated and unstable over time."
+      },
+      {
+        "type": "paragraph",
+        "text": "A second issue is the assumption of static covariance structures. In reality, correlations between assets shift dramatically during market stress, precisely when diversification is needed most."
+      },
+      {
+        "type": "heading",
+        "text": "Hierarchical Risk Parity as a Starting Point"
+      },
+      {
+        "type": "paragraph",
+        "text": "Our team began by implementing Hierarchical Risk Parity (HRP), a method proposed by Marcos López de Prado. Unlike MVO, HRP uses graph theory and hierarchical clustering to allocate risk without requiring an invertible covariance matrix. The result is a more stable, diversified portfolio that doesn't rely on return forecasts."
+      },
+      {
+        "type": "paragraph",
+        "text": "We backtested HRP against an equal-weight benchmark and a traditional 60/40 portfolio on a universe of 50 European equities from 2015 to 2024. HRP delivered a Sharpe ratio of 0.91 vs. 0.67 for the 60/40 benchmark, with significantly lower maximum drawdown."
+      },
+      {
+        "type": "heading",
+        "text": "Introducing Regime Detection"
+      },
+      {
+        "type": "paragraph",
+        "text": "The next step was to make our allocation dynamic. We trained a Hidden Markov Model on a set of macro indicators — yield curve slope, equity volatility (VIX proxy), credit spreads, and momentum signals — to identify distinct market regimes: risk-on, risk-off, and transitional."
+      },
+      {
+        "type": "paragraph",
+        "text": "By shifting portfolio weights based on the detected regime, we were able to reduce drawdowns during the 2020 and 2022 sell-offs while maintaining participation in trending markets. Critically, all regime signals were computed using only data available at each rebalancing date — no look-ahead bias."
+      },
+      {
+        "type": "heading",
+        "text": "Key Takeaways"
+      },
+      {
+        "type": "paragraph",
+        "text": "Machine learning is not a silver bullet, but applied thoughtfully — with rigorous backtesting discipline and an awareness of overfitting — it can meaningfully improve on classical approaches. Our ongoing work focuses on incorporating alternative data sources (earnings call sentiment, satellite imagery) and exploring deep reinforcement learning for dynamic asset allocation. Watch this space."
+      }
+    ]
+  },
+  {
+    "id": "european-renewables-undervalued",
+    "title": "European Renewable Energy: Undervalued Opportunities in the Energy Transition",
+    "slug": "european-renewables-undervalued",
+    "category": "Energy & Utilities",
+    "categoryColor": "#f59e0b",
+    "author": "Rik van Dijk",
+    "authorRole": "Energy & Utilities Team",
+    "date": "2025-02-05",
+    "readTime": "6 min read",
+    "excerpt": "With European energy policy accelerating the transition away from fossil fuels, our sector team identifies a cohort of pure-play renewable developers trading at compelling discounts to intrinsic value.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69a5f2140d94759156ad0485_bda9df45-f543-4ccc-a40b-11065d5a5675.avif",
+    "tags": ["Energy Transition", "Renewables", "ESG", "Valuation"],
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "The European energy transition is no longer a distant aspiration — it is an active reshaping of the continent's power infrastructure. Yet despite the policy tailwinds, a number of pure-play renewable developers are trading at significant discounts to what our team believes is fair value. Here's why, and what we think the market is missing."
+      },
+      {
+        "type": "heading",
+        "text": "Why Sentiment Has Soured"
+      },
+      {
+        "type": "paragraph",
+        "text": "The rate-hiking cycle of 2022–2024 hit capital-intensive, long-duration assets hard. Renewable project developers, which typically finance large infrastructure investments with debt, saw their cost of capital rise sharply just as power price volatility created uncertainty over future cash flows. Many stocks in the sector fell 40–60% from their 2021 peaks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Compounding this, grid connection delays and permitting bottlenecks across key European markets have pushed project timelines to the right, disappointing investors who expected faster earnings growth."
+      },
+      {
+        "type": "heading",
+        "text": "What the Bears Are Missing"
+      },
+      {
+        "type": "paragraph",
+        "text": "Our team's analysis suggests that the market is over-extrapolating near-term headwinds and undervaluing three durable tailwinds: (1) the structural decline in solar and wind LCOE, which continues to make new capacity economically attractive even without subsidies; (2) the EU's revised permitting framework, which materially shortens approval timelines for renewable projects from 2024 onwards; and (3) the structural underinvestment in European grid capacity, which is creating a multi-decade demand pull for both generation and storage assets."
+      },
+      {
+        "type": "heading",
+        "text": "Valuation Framework"
+      },
+      {
+        "type": "paragraph",
+        "text": "We value renewable developers using a sum-of-the-parts DCF, treating each project as a separate cash flow stream with its own discount rate, capacity factor, and power purchase agreement structure. This granular approach reveals that several mid-cap developers are implying negative value for their development pipeline — a clear sign that the market is not giving credit for assets that carry real option value."
+      },
+      {
+        "type": "paragraph",
+        "text": "Our preferred names are trading at 0.7–0.9x RAB (Regulated Asset Base) versus a historical average of 1.2–1.4x for high-quality European utilities. We believe a re-rating to 1.1x RAB is achievable over an 18–24 month horizon as interest rates normalize and permitting reforms take effect."
+      }
+    ]
+  },
+  {
+    "id": "tail-risk-stress-testing",
+    "title": "Building a Tail Risk & Stress Testing Framework for Equity Portfolios",
+    "slug": "tail-risk-stress-testing",
+    "category": "Risk Management",
+    "categoryColor": "#ef4444",
+    "author": "Sanne de Vries",
+    "authorRole": "Risk Management Team",
+    "date": "2025-01-22",
+    "readTime": "7 min read",
+    "excerpt": "Standard VaR models fail precisely when they matter most. Our Risk Management Team walks through the framework we built to identify and quantify tail risks in equity portfolios using Monte Carlo simulation and historical scenario analysis.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/695e2eae1f6fd2cc0d641fb9_dff90177-18eb-4b60-acb5-381c0b0885f0.avif",
+    "tags": ["Risk Management", "VaR", "Monte Carlo", "Stress Testing"],
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "One of the most dangerous phrases in risk management is 'this is a once-in-a-hundred-years event.' History has shown that extreme market dislocations occur far more frequently than standard normal distribution models predict. Fat tails are not the exception — they are the rule."
+      },
+      {
+        "type": "heading",
+        "text": "The Limits of VaR"
+      },
+      {
+        "type": "paragraph",
+        "text": "Value at Risk (VaR) is the most widely used risk metric in finance, yet it has a fundamental flaw: it tells you nothing about what happens beyond the confidence threshold. A 95% daily VaR of €10,000 means that on 5% of days, your losses could be €10,000 — or €100,000. The distribution of losses in the tail is entirely invisible."
+      },
+      {
+        "type": "paragraph",
+        "text": "Conditional VaR (CVaR), also known as Expected Shortfall, addresses this by measuring the average loss in the tail. It is a more coherent risk measure and the one our team prioritizes in reporting."
+      },
+      {
+        "type": "heading",
+        "text": "Our Monte Carlo Approach"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rather than assuming returns are normally distributed, we model each asset using a Student's t-distribution with calibrated degrees of freedom to capture fat tails. We then simulate 100,000 daily portfolio scenarios, accounting for time-varying correlations estimated using a DCC-GARCH model."
+      },
+      {
+        "type": "paragraph",
+        "text": "The result is a full distribution of potential portfolio outcomes — not just a single point estimate. From this we extract CVaR at 95% and 99% confidence, as well as the full loss distribution for visualization."
+      },
+      {
+        "type": "heading",
+        "text": "Historical Scenario Analysis"
+      },
+      {
+        "type": "paragraph",
+        "text": "Alongside the simulation-based approach, we map the portfolio against five historical stress scenarios: the 2008 Global Financial Crisis, the 2010 European Sovereign Debt Crisis, the 2015 Chinese market rout, COVID-19 (March 2020), and the 2022 inflation shock. Each scenario is applied to current portfolio weights to estimate potential losses."
+      },
+      {
+        "type": "paragraph",
+        "text": "This dual approach — forward-looking simulation plus backward-looking scenarios — gives us a richer picture of the portfolio's risk profile than any single method could provide alone."
+      }
+    ]
+  },
+  {
+    "id": "european-saas-hidden-champions",
+    "title": "European SaaS: Finding Hidden Champions in Plain Sight",
+    "slug": "european-saas-hidden-champions",
+    "category": "Information Technology",
+    "categoryColor": "#3b82f6",
+    "author": "Jasper Willems",
+    "authorRole": "Information Technology Team",
+    "date": "2025-01-10",
+    "readTime": "5 min read",
+    "excerpt": "While US mega-cap tech dominates headlines, a cohort of European B2B software companies with strong recurring revenue, high retention, and compelling valuations is being systematically overlooked by the market.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69a5f2140d94759156ad049d_8f9a5090-7c16-492c-a0db-863dd9b80b45.avif",
+    "tags": ["Software", "SaaS", "Europe", "Recurring Revenue"],
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "The narrative around European technology investing has long suffered from an unfavorable comparison to Silicon Valley. Europe lacks the venture capital depth, the talent concentration, and the risk appetite of the US tech ecosystem — so the story goes. But in the software sector, this narrative is increasingly at odds with reality."
+      },
+      {
+        "type": "heading",
+        "text": "What Makes a 'Hidden Champion'?"
+      },
+      {
+        "type": "paragraph",
+        "text": "We define European SaaS hidden champions as publicly listed B2B software companies with (1) annual recurring revenue between €50m and €500m, (2) net revenue retention above 110%, (3) a dominant position in a vertical niche, and (4) an EV/ARR multiple below the peer group median. This screen identified 17 companies across the DACH region, the Nordics, and Benelux."
+      },
+      {
+        "type": "heading",
+        "text": "Why the Valuation Gap Exists"
+      },
+      {
+        "type": "paragraph",
+        "text": "Several factors contribute to the discount these companies trade at relative to US peers: lower index inclusion leading to reduced passive fund flows, limited analyst coverage, language and reporting barriers for non-European investors, and a general perception that European software companies struggle to scale internationally."
+      },
+      {
+        "type": "paragraph",
+        "text": "Our research suggests the last assumption is increasingly outdated. Several of the companies in our screen derive 40–60% of revenue from outside their home market, driven by product-led growth motions that scale effectively across borders."
+      },
+      {
+        "type": "heading",
+        "text": "Key Metrics We Monitor"
+      },
+      {
+        "type": "paragraph",
+        "text": "Beyond standard SaaS metrics (ARR growth, gross margin, Rule of 40), we place particular emphasis on net dollar retention — the single best predictor of long-term value creation in software. We also track free cash flow conversion carefully; many European SaaS companies have reached profitability at scale, a milestone their US counterparts are still working toward."
+      }
+    ]
+  },
+  {
+    "id": "biotech-pipeline-valuation",
+    "title": "Valuing Biotech Pipelines: A Probability-Adjusted Framework",
+    "slug": "biotech-pipeline-valuation",
+    "category": "Healthcare",
+    "categoryColor": "#10b981",
+    "author": "Lotte Janssen",
+    "authorRole": "Healthcare Team",
+    "date": "2024-12-18",
+    "readTime": "9 min read",
+    "excerpt": "Biotech valuation is part science, part art. Our healthcare team presents the risk-adjusted NPV framework we use to value early-stage pharmaceutical pipelines, including how we assign probability weights across clinical trial phases.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69a5f2140d94759156ad04a2_5113c4db-6904-4a9d-8dea-284a9fb7c8e1.avif",
+    "tags": ["Biotech", "Valuation", "rNPV", "Drug Development"],
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Valuing a biotech company that has no approved products and may not generate meaningful revenue for years is one of the most challenging tasks in equity research. Standard multiples-based approaches are largely useless. Instead, the industry relies on risk-adjusted Net Present Value (rNPV) — a framework our team has adapted and refined for use in our stock pitches."
+      },
+      {
+        "type": "heading",
+        "text": "Understanding the rNPV Framework"
+      },
+      {
+        "type": "paragraph",
+        "text": "The core idea is straightforward: model the future cash flows from each drug in a company's pipeline, then discount them back to the present at a risk-adjusted rate, and apply a probability of technical and regulatory success (PTRS) to each program."
+      },
+      {
+        "type": "paragraph",
+        "text": "PTRS varies significantly by indication and trial phase. As a starting point, we use historical industry averages: Phase I to approval averages around 10–15% across all indications, though oncology is lower (~5%) and rare diseases with strong genetic validation can be significantly higher."
+      },
+      {
+        "type": "heading",
+        "text": "Modelling Peak Sales"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most uncertain — and most important — input is peak sales. We estimate this using a top-down approach: total addressable patient population, diagnosis and treatment rates, market share at peak (typically 5–25% for a second-in-class drug, potentially higher for best-in-class), and net pricing after rebates."
+      },
+      {
+        "type": "paragraph",
+        "text": "We then model a revenue ramp (typically 3–5 years post-launch to peak) followed by a gradual decline as the patent cliff approaches (typically year 10–12 post-launch in the EU)."
+      },
+      {
+        "type": "heading",
+        "text": "Choosing the Right Discount Rate"
+      },
+      {
+        "type": "paragraph",
+        "text": "We use a 10–12% discount rate for late-stage programs with de-risked assets and a 15–20% rate for early-stage or first-in-class programs where scientific uncertainty is high. The discount rate encapsulates not just the time value of money but also execution risk, financing risk, and competitive risk."
+      },
+      {
+        "type": "paragraph",
+        "text": "Summing the rNPV across all pipeline assets, adding net cash, and subtracting corporate overhead costs gives us our per-share intrinsic value estimate. We then triangulate this against EV/pipeline comparables and M&A transaction multiples for confirmation."
+      }
+    ]
+  },
+  {
+    "id": "from-student-to-analyst",
+    "title": "From Student to Analyst: How TIC Prepared Me for a Career in Finance",
+    "slug": "from-student-to-analyst",
+    "category": "Community",
+    "categoryColor": "#8b5cf6",
+    "author": "Tom Peeters",
+    "authorRole": "Board Member & Alumni",
+    "date": "2024-12-03",
+    "readTime": "4 min read",
+    "excerpt": "After two years as a member and one as a board member, Tom Peeters reflects on how TIC shaped his transition from economics student to investment analyst at a leading European asset manager.",
+    "coverImage": "https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/695e2eaf0eece2474b3d7df4_aaaabefd-ebed-4f27-95ed-2439e6781f04.avif",
+    "tags": ["Career", "Community", "Mentorship", "Alumni"],
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "When I joined Tilburg Investment Club in my second year, I could barely read a balance sheet. Three years later, I was starting my first role as a junior analyst at a Dutch asset manager — and I can trace almost every skill that got me there back to my time at TIC."
+      },
+      {
+        "type": "heading",
+        "text": "The First Stock Pitch"
+      },
+      {
+        "type": "paragraph",
+        "text": "My first sector team was Industrials. I spent two months researching a Dutch logistics company and built what I thought was a thorough DCF model. When I presented it to the team, I was grilled for 45 minutes on my assumptions. My terminal growth rate was too optimistic. My capex forecasts didn't match management guidance. My working capital assumptions were wrong by a factor of two."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was uncomfortable. But it was exactly the kind of rigorous feedback I needed. By the second pitch, I knew how to anticipate the hard questions — and by the third, I was the one asking them."
+      },
+      {
+        "type": "heading",
+        "text": "What Interviews Actually Test"
+      },
+      {
+        "type": "paragraph",
+        "text": "When I started applying for internships, I noticed that the questions in finance interviews fell into categories I recognized from TIC: walk me through a DCF, pitch me a stock, what's your view on a current macro theme? The experience of having defended investment ideas in front of smart, skeptical peers meant I was genuinely comfortable in those conversations."
+      },
+      {
+        "type": "paragraph",
+        "text": "TIC also gave me something harder to quantify: intellectual confidence. The conviction to say 'I think the market is wrong about this, and here's why.' That kind of conviction, grounded in rigorous research, is what separates good analysts from great ones."
+      },
+      {
+        "type": "heading",
+        "text": "Advice for New Members"
+      },
+      {
+        "type": "paragraph",
+        "text": "Don't wait until you feel ready to pitch. Pitch before you're ready. Make the mistakes early, inside a club where people want to help you improve. Show up to sessions for other sector teams. Read the pitches of members who are two years ahead of you. And most importantly — take the feedback seriously. The members who grew the most during my time at TIC weren't the smartest ones. They were the ones who were most coachable."
+      }
+    ]
+  }
+]

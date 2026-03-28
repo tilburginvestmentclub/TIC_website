@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tilburg Investment Club</title>
+  <meta name="description" content="Get in touch with Tilburg Investment Club — questions, partnerships, or just want to learn more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Lexend:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-hero {
+      padding: 10rem 0 6rem;
+      background: var(--color-primary);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; right: -5%;
+      width: 560px; height: 560px;
+      border-radius: 50%;
+      background: rgba(37,99,235,0.06);
+    }
+    .contact-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%; left: -5%;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      background: rgba(37,99,235,0.04);
+    }
+    .contact-hero .container { position: relative; z-index: 2; }
+    .contact-hero h1 { color: #fff; max-width: 700px; margin-bottom: 1.25rem; }
+    .contact-hero .lead { color: var(--color-text-on-dark); font-size: 1.15rem; max-width: 580px; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      color: var(--color-text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact-item-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--color-off-white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-item-text strong {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.15rem;
+    }
+    .contact-item-text a,
+    .contact-item-text span {
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-item-text a:hover { color: var(--color-accent); }
+
+    .contact-form-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+    }
+    .contact-form-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .contact-form-card .form-subtitle {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-family: var(--font-ui);
+      font-size: 0.95rem;
+      color: var(--color-text);
+      background: var(--color-white);
+      transition: border-color var(--transition);
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .btn-submit {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69770d801072a12ac28bad9b_6bf71abe8759c9ac8caada21c4812571_TIC%20logo%20transparent%20BG.png" alt="Tilburg Investment Club">
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Departments <span class="chevron">&#9662;</span></a>
+          <div class="nav-dropdown">
+            <div class="dropdown-grid">
+              <div class="dropdown-category">
+                <div class="dropdown-category-title">Quantitative</div>
+                <a href="quantitative.html" class="dropdown-link"><span class="icon">&#128202;</span> Risk Management</a>
+                <a href="quantitative.html" class="dropdown-link"><span class="icon">&#128300;</span> Research Hub</a>
+              </div>
+              <div class="dropdown-category">
+                <div class="dropdown-category-title">Fundamental</div>
+                <a href="fundamentals.html" class="dropdown-link"><span class="icon">&#127981;</span> Sector Focus</a>
+                <a href="fundamentals.html" class="dropdown-link"><span class="icon">&#128200;</span> Stock Pitches</a>
+              </div>
+              <div class="dropdown-category">
+                <div class="dropdown-category-title">Community</div>
+                <a href="#" class="dropdown-link"><span class="icon">&#127891;</span> Events</a>
+                <a href="#" class="dropdown-link"><span class="icon">&#129309;</span> Membership</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link" style="color:#fff;">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions"><a href="#" class="btn-apply">Apply now</a></div>
+      <div class="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>We'd love to hear from you.</h1>
+      <p class="lead">Whether you're interested in joining TIC, exploring a partnership, or have a question — reach out and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: contact info -->
+        <div class="contact-info">
+          <h2>Let's connect</h2>
+          <p>Tilburg Investment Club is always open to new members, collaborators, and partners. Drop us a message and a member of the board will respond as soon as possible.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#9993;</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <a href="mailto:tilburginvestmentclub@gmail.com">tilburginvestmentclub@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#127979;</div>
+            <div class="contact-item-text">
+              <strong>University</strong>
+              <span>Tilburg University, Tilburg, Netherlands</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">&#128279;</div>
+            <div class="contact-item-text">
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/company/tilburg-investment-club" target="_blank" rel="noopener">Tilburg Investment Club</a>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem;">
+            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">Interested in joining TIC?</p>
+            <a href="#" class="btn btn-primary">Apply now <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-card">
+          <h3>Send us a message</h3>
+          <p class="form-subtitle">Fill out the form and we'll get back to you within a few days.</p>
+
+          <form action="mailto:tilburginvestmentclub@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic</option>
+                <option value="membership">Membership &amp; Joining</option>
+                <option value="partnership">Partnership &amp; Sponsorship</option>
+                <option value="guest-lecture">Guest Lecture</option>
+                <option value="media">Media &amp; Press</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Send message <span class="arrow">&rarr;</span></button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">
+          <img src="https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69770d801072a12ac28bad9b_6bf71abe8759c9ac8caada21c4812571_TIC%20logo%20transparent%20BG.png" alt="Tilburg Investment Club">
+        </a>
+        <div class="footer-links">
+          <a href="quantitative.html">Quantitative</a>
+          <a href="fundamentals.html">Fundamentals</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/tilburg-investment-club" target="_blank" rel="noopener">
+            <img src="https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/6995628a322a25ea661fc9a4_linkedin-svgrepo-com%20(2).svg" alt="LinkedIn">
+          </a>
+          <a href="mailto:tilburginvestmentclub@gmail.com">
+            <img src="https://cdn.prod.website-files.com/695e2df7ee8dd9038d569d1b/69956264ce5367b9f816bc97_email-1-svgrepo-com%20(1).svg" alt="Email">
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tilburg Investment Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

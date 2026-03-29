@@ -99,45 +99,6 @@
       margin-bottom: 2rem;
     }
 
-    .form-group {
-      margin-bottom: 1.25rem;
-    }
-    .form-group label {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--color-text);
-      margin-bottom: 0.5rem;
-    }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border: 1.5px solid var(--color-border);
-      border-radius: var(--radius-md);
-      font-family: var(--font-ui);
-      font-size: 0.95rem;
-      color: var(--color-text);
-      background: var(--color-white);
-      transition: border-color var(--transition);
-      box-sizing: border-box;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--color-accent);
-    }
-    .form-group textarea {
-      resize: vertical;
-      min-height: 130px;
-    }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
     .btn-submit {
       width: 100%;
       justify-content: center;
@@ -238,47 +199,36 @@
           </div>
         </div>
 
-        <!-- Right: contact form -->
+        <!-- Right: how to apply -->
         <div class="contact-form-card">
-          <h3>Send us a message</h3>
-          <p class="form-subtitle">Fill out the form and we'll get back to you within a few days.</p>
+          <h3>Apply to TIC</h3>
+          <p class="form-subtitle">Send us an email with the following and we'll get back to you as soon as possible.</p>
 
-          <form action="mailto:tilburginvestmentclub@gmail.com" method="post" enctype="text/plain">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="John" required>
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+          <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2rem;">
+            <div class="contact-item">
+              <div class="contact-item-icon">&#127981;</div>
+              <div class="contact-item-text">
+                <strong>Department of interest</strong>
+                <span>Fundamentals, Quantitative, or both</span>
               </div>
             </div>
-
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128196;</div>
+              <div class="contact-item-text">
+                <strong>Your CV</strong>
+                <span>Attach as PDF</span>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject">
-                <option value="">Select a topic</option>
-                <option value="membership">Membership &amp; Joining</option>
-                <option value="partnership">Partnership &amp; Sponsorship</option>
-                <option value="guest-lecture">Guest Lecture</option>
-                <option value="media">Media &amp; Press</option>
-                <option value="other">Other</option>
-              </select>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#9997;</div>
+              <div class="contact-item-text">
+                <strong>Motivation letter</strong>
+                <span>Tell us why you want to join TIC</span>
+              </div>
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit">Send message <span class="arrow">&rarr;</span></button>
-          </form>
+          <a href="mailto:tilburginvestmentclub@gmail.com?subject=TIC Application" class="btn btn-primary btn-submit">Send your application <span class="arrow">&rarr;</span></a>
         </div>
 
       </div>
